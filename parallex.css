@@ -1,0 +1,87 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.first-image, .second-image, .third-image, .fourth-image{
+    height: 600px;
+}
+
+.first-image{
+    background-image: url(./images/first-image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.second-image{
+    background-image: url(./images/second-image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.third-image{
+    background-image: url(./images/third-image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fourth-image{
+    background-image: url(./images/fourth.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-dark{
+    background-color: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    font-size: 18px;
+}
+
+.section-light{
+    background-color: bisque;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    font-size: 18px;
+}
+
+.image{
+    position: relative;
+}
+
+.image div{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.image div span{
+    background-color: white;
+    color: gray;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 7px;
+}
+
